@@ -354,3 +354,4 @@ DockerExampleApp/scripts/outputs/
 aspnet-core-and-docker/03/YoYoMooc.ExampleApp/dist
 aspnet-core-and-docker/dev/YoYoMooc.ExampleApp/dist
 aspnet-core-and-docker/07-12/YoYoMooc.ExampleApp/dist
+src/dist/
