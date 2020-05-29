@@ -21,7 +21,14 @@ jobs:
         working-directory: ./src
       - name: Build
         run: dotnet build --configuration Release --no-restore
+        working-directory: ./src
+
       - name: Test
         run: dotnet test --no-restore --verbosity normal
+        working-directory: ./src
       - name: publish
-        run: dotnet publish --configuration Release --output dist & ls
+        run: dotnet publish --configuration Release --output dist
+        working-directory: ./src
+      - name: Build the Docker image
+        run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+        working-directory: ./src/dist
