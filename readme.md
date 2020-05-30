@@ -20,5 +20,11 @@ docker push yoyomooc.azurecr.io/exampleapp
 docker create -p 3000:80 --name exampleApp3000 yoyomooc.azurecr.io/exampleapp
 ```
 
+```bash
+docker run -p 3000:80 --name exampleApp3000 yoyomooc.azurecr.io/exampleapp
+
+
+docker rm exampleApp3000 -f
+````
 
 docker run -p 80:80 --name exampleApp yoyomooc.azurecr.io/exampleapp
