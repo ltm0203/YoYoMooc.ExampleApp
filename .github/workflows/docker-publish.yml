@@ -47,13 +47,13 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Build image
+      - name: Build image 创建镜像
         run: docker build . --file Dockerfile --tag $IMAGE_NAME
 
-      - name: Log into registry
+      - name: Log into registry 登录到注册表中
         run: echo "${{ secrets.ACR_PRINCIPAL_PASSWORD }}" | docker login yoyomooc.azurecr.io -u ${{ secrets.TENANT }} --password-stdin
 
-      - name: Push image
+      - name: Push image 推送镜像
         run: |
           IMAGE_ID=yoyomooc.azurecr.io/$IMAGE_NAME
 
