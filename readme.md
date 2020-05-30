@@ -1,4 +1,5 @@
 
+![.NET Core](https://github.com/ltm0203/YoYoMooc.ExampleApp/workflows/.NET%20Core/badge.svg)  ![Docker](https://github.com/ltm0203/YoYoMooc.ExampleApp/workflows/Docker/badge.svg)
 
 ## 编译命令
 
