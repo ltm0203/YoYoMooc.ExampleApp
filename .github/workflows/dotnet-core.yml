@@ -31,4 +31,3 @@ jobs:
         working-directory: ./src
       - name: Build the Docker image
         run: docker build . --file Dockerfile --tag yoyomooc.azurecr.io/exampleap:$(date +%s)
-        working-directory: ./src/dist
