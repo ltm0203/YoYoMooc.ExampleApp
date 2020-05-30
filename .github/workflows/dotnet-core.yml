@@ -29,5 +29,3 @@ jobs:
       - name: publish
         run: dotnet publish --configuration Release --output dist
         working-directory: ./src
-      - name: Build the Docker image
-        run: docker build . --file Dockerfile --tag yoyomooc.azurecr.io/exampleap:$(date +%s)
